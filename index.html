@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manisha K | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+
+    header {
+      background-color: #800000;
+      text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+      color: #ffdd99;
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .nav-buttons button {
+      background-color: #800000;
+      border: none;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #a30000;
+    }
+
+    .section {
+      display: none;
+      max-width: 900px;
+      margin: 0 auto 30px;
+      background-color: #1e1e1e;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h2 {
+      color: #ffb703;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #fcbf49;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #111;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Manisha K</h1>
+    <p>Electronics and Communication Engineering Student</p>
+  </header>
+
+  <div class="nav-buttons">
+    <button onclick="toggleSection('contact')">Contact</button>
+    <button onclick="toggleSection('skills')">Skills</button>
+    <button onclick="toggleSection('projects')">Projects</button>
+    <button onclick="toggleSection('certifications')">Certifications</button>
+    <button onclick="toggleSection('education')">Education</button>
+    <button onclick="toggleSection('others')">Languages & Hobbies</button>
+  </div>
+
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:manishaahkv@gmail.com">manishaahkv@gmail.com</a></p>
+    <p>Phone: 9944872890</p>
+    <p>Location: Tiruppur</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/manisha-k-162731267/" target="_blank">linkedin.com/in/manisha-k</a></p>
+    <p>GitHub: <a href="https://github.com/Manisha04k" target="_blank">github.com/Manisha04k</a></p>
+  </div>
+
+  <div id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>C, Java, HTML, CSS</li>
+      <li>ServiceNow (CSA Certified)</li>
+      <li>UI/UX Design (Figma)</li>
+      <li>Web Development</li>
+    </ul>
+  </div>
+
+  <div id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Smart Library Management System</strong><br>
+      HTML, CSS, JavaScript, PHP, MySQL – Front-End Developer</li><br>
+
+      <li><strong>Sign Language to Speech Conversion</strong><br>
+      Arduino + Tinkercad – Circuit Designer</li><br>
+
+      <li><strong>Personalized Medicine Recommendation System</strong><br>
+      Python & ML – UI Frontend Developer</li>
+    </ul>
+  </div>
+
+  <div id="certifications" class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Certified System Administrator – ServiceNow (April 2025)</li>
+      <li>Problem Solving in C – NPTEL (2024)</li>
+    </ul>
+  </div>
+
+  <div id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+      <li>B.E - ECE, Bannari Amman Institute of Technology (2022–2026) – CGPA: 8.59</li>
+      <li>Higher Secondary – 91.5%</li>
+      <li>Secondary School – 91.6%</li>
+    </ul>
+  </div>
+
+  <div id="others" class="section">
+    <h2>Languages & Hobbies</h2>
+    <ul>
+      <li>Languages: English, Tamil (Read, Write, Speak)</li>
+      <li>Skills: Teamwork, Time Management</li>
+      <li>Hobbies: Typing, Listening to Music</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 Manisha K | Crafted with and passion
+  </footer>
+
+  <script>
+    function toggleSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => {
+        if (sec.id === id) {
+          sec.style.display = sec.style.display === 'block' ? 'none' : 'block';
+        } else {
+          sec.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
